@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="hero-title hero-desc">
+<title id="hero-title">Hi, I'm Ravi Prakash Rajjak — Engineering Lead based in Dubai, UAE. Building high-scale fintech and Android systems.</title>
+<desc id="hero-desc">Animated hero banner for Ravi Prakash Rajjak's GitHub profile</desc>
+<style>
+text{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;font-weight:700;fill:#e8f0fe}
+.mono{font-family:'Courier New','SF Mono',monospace;font-weight:400}
+.green{fill:#3DDC84}
+.blue{fill:#1a73e8}
+.teal{fill:#00BCD4}
+.muted{fill:#7a8ba5}
+.enter{animation:entry 1s cubic-bezier(.16,1,.3,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+.d4{animation-delay:.4s}.d5{animation-delay:.5s}.d6{animation-delay:.6s}
+.d7{animation-delay:.7s}.d8{animation-delay:.8s}
+.blink{animation:blink 1s steps(2,end) infinite both}
+.pulse{animation:pulse 2.4s ease-in-out infinite both}
+.float{animation:float 6s ease-in-out infinite both}
+.scan{animation:scan 8s ease-in-out infinite both}
+.spin-slow{animation:spin 30s linear infinite}
+.spin-med{animation:spin 20s linear infinite reverse}
+@keyframes entry{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes scan{0%,25%{transform:translateX(-1200px)}75%,100%{transform:translateX(1200px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes typing{from{width:0}to{width:520px}}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#1a73e8"/>
+    <stop offset=".5" stop-color="#3DDC84"/>
+    <stop offset="1" stop-color="#00BCD4"/>
+  </linearGradient>
+  <linearGradient id="border-g" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#3DDC84" stop-opacity=".7"/>
+    <stop offset=".5" stop-color="#1a73e8" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity=".65"/>
+  </linearGradient>
+  <linearGradient id="foil">
+    <stop stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".42" stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#afffcc" stop-opacity=".25"/>
+    <stop offset=".58" stop-color="#00BCD4" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="glow-green">
+    <stop stop-color="#3DDC84" stop-opacity=".2"/>
+    <stop offset="1" stop-color="#3DDC84" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow-blue">
+    <stop stop-color="#1a73e8" stop-opacity=".25"/>
+    <stop offset="1" stop-color="#1a73e8" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r=".6" fill="#3DDC84" opacity=".08"/>
+  </pattern>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity=".5"/>
+  </filter>
+  <clipPath id="card"><rect x="1" y="1" width="1198" height="638" rx="24"/></clipPath>
+</defs>
+
+<g clip-path="url(#card)">
+  <!-- Background -->
+  <rect x="1" y="1" width="1198" height="638" rx="24" fill="#0a1628" stroke="url(#border-g)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="1196" height="636" rx="23" fill="url(#dots)"/>
+
+  <!-- Glow orbs -->
+  <ellipse cx="900" cy="320" rx="320" ry="280" fill="url(#glow-blue)" class="enter d1"/>
+  <ellipse cx="180" cy="500" rx="200" ry="180" fill="url(#glow-green)" class="enter d2"/>
+
+  <!-- Holographic scan -->
+  <rect x="0" y="0" width="1200" height="640" fill="url(#foil)" class="scan"/>
+
+  <!-- Top label -->
+  <text x="48" y="48" font-size="11" letter-spacing="2.5" class="mono muted enter d1">// ENGINEERING LEAD — ANDROID &amp; BACKEND SYSTEMS</text>
+
+  <!-- Main name -->
+  <text x="48" y="160" font-size="72" class="enter d2" fill="#e8f0fe">RAVI PRAKASH</text>
+  <text x="48" y="245" font-size="72" class="enter d3 green">RAJJAK</text>
+
+  <!-- Typing subtitle with cursor -->
+  <g class="enter d4">
+    <rect x="48" y="270" width="0" height="28" fill="none">
+      <animate attributeName="width" begin="0.8s" dur="2s" values="0;0;520" keyTimes="0;0.1;1" fill="freeze"/>
+    </rect>
+    <text x="48" y="290" font-size="16" class="mono" fill="#7a8ba5" clip-path="url(#typing-clip)">
+      Building high-scale fintech &amp; OTT platforms for millions
+    </text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="568" y="274" width="2" height="20" fill="#3DDC84" opacity="0">
+    <animate attributeName="opacity" begin="2.8s" dur="1s" values="0;1;1;0;1;1;0;1" keyTimes="0;0.01;0.49;0.5;0.51;0.99;1;1" fill="freeze" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Location badge -->
+  <g class="enter d5" transform="translate(48,320)">
+    <rect width="150" height="32" rx="16" fill="#0f2440" stroke="#1a73e8" stroke-opacity=".5"/>
+    <circle cx="18" cy="16" r="4" fill="#3DDC84" class="pulse"/>
+    <text x="30" y="21" font-size="12" class="mono" fill="#7a8ba5">Dubai, UAE</text>
+  </g>
+
+  <!-- Experience badge -->
+  <g class="enter d6" transform="translate(210,320)">
+    <rect width="130" height="32" rx="16" fill="#0f2440" stroke="#3DDC84" stroke-opacity=".3"/>
+    <text x="16" y="21" font-size="12" class="mono" fill="#3DDC84">10+ Years Exp</text>
+  </g>
+
+  <!-- Currently at badge -->
+  <g class="enter d7" transform="translate(352,320)">
+    <rect width="170" height="32" rx="16" fill="#0f2440" stroke="#00BCD4" stroke-opacity=".3"/>
+    <text x="16" y="21" font-size="12" class="mono" fill="#00BCD4">@ Emirates NBD</text>
+  </g>
+
+  <!-- Cycling roles -->
+  <g class="enter d6" transform="translate(48,395)">
+    <text font-size="13" class="mono" fill="#3DDC84" opacity="1">
+      &gt; Fintech · Payments · OTT · Digital Entertainment
+      <animate attributeName="opacity" begin="0s" dur="12s" values="1;1;0;0;1" keyTimes="0;0.3;0.33;0.97;1" repeatCount="indefinite"/>
+    </text>
+    <text font-size="13" class="mono" fill="#00BCD4" opacity="0">
+      &gt; Kotlin · Jetpack Compose · Spring Boot · Clean Architecture
+      <animate attributeName="opacity" begin="0s" dur="12s" values="0;0;1;1;0" keyTimes="0;0.3;0.33;0.63;0.67" repeatCount="indefinite"/>
+    </text>
+    <text font-size="13" class="mono" fill="#1a73e8" opacity="0">
+      &gt; Led teams of 10+ · Shipped apps with millions of users
+      <animate attributeName="opacity" begin="0s" dur="12s" values="0;0;1;1;0" keyTimes="0;0.63;0.67;0.97;1" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Right side: Android-inspired geometric / circuit diagram -->
+  <!-- Orbital system -->
+  <g transform="translate(920,300)">
+    <!-- Outer glow -->
+    <circle cx="0" cy="0" r="180" fill="url(#glow-blue)" opacity=".3"/>
+
+    <!-- Orbit rings -->
+    <g class="spin-slow" style="transform-origin:0px 0px">
+      <ellipse cx="0" cy="0" rx="160" ry="160" fill="none" stroke="#1a73e8" stroke-opacity=".2" stroke-width="1" stroke-dasharray="8 12"/>
+    </g>
+    <g class="spin-med" style="transform-origin:0px 0px">
+      <ellipse cx="0" cy="0" rx="110" ry="110" fill="none" stroke="#3DDC84" stroke-opacity=".2" stroke-width="1" stroke-dasharray="6 10"/>
+    </g>
+    <ellipse cx="0" cy="0" rx="60" ry="60" fill="none" stroke="#00BCD4" stroke-opacity=".15" stroke-width="1"/>
+
+    <!-- Center hexagon (Android-inspired) -->
+    <path d="M0 -45 L39 -22.5 L39 22.5 L0 45 L-39 22.5 L-39 -22.5 Z" fill="#0c2040" stroke="#3DDC84" stroke-width="1.5" filter="url(#glow)"/>
+    <path d="M0 -45 L39 -22.5 L0 0 L-39 -22.5 Z" fill="#143d1e" opacity=".6"/>
+    <path d="M0 0 L39 22.5 L0 45 L-39 22.5 Z" fill="#0a2818" opacity=".4"/>
+
+    <!-- Android head in center -->
+    <g transform="translate(-16,-18) scale(0.65)">
+      <rect x="2" y="22" width="46" height="30" rx="4" fill="#3DDC84"/>
+      <rect x="10" y="14" width="30" height="12" rx="10" fill="#3DDC84"/>
+      <circle cx="18" cy="19" r="2.5" fill="#0a1628"/>
+      <circle cx="32" cy="19" r="2.5" fill="#0a1628"/>
+      <line x1="14" y1="6" x2="10" y2="0" stroke="#3DDC84" stroke-width="2" stroke-linecap="round"/>
+      <line x1="36" y1="6" x2="40" y2="0" stroke="#3DDC84" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Orbiting dots -->
+    <g class="spin-slow" style="transform-origin:0px 0px">
+      <circle cx="160" cy="0" r="5" fill="#1a73e8" filter="url(#glow)"/>
+      <circle cx="-80" cy="138" r="4" fill="#3DDC84" filter="url(#glow)"/>
+      <circle cx="-80" cy="-138" r="3" fill="#00BCD4" filter="url(#glow)"/>
+    </g>
+    <g class="spin-med" style="transform-origin:0px 0px">
+      <circle cx="0" cy="110" r="4" fill="#3DDC84" opacity=".7" filter="url(#glow)"/>
+      <circle cx="95" cy="-55" r="3" fill="#1a73e8" opacity=".7"/>
+    </g>
+
+    <!-- Tech labels floating around -->
+    <g class="float">
+      <text x="-40" y="-130" font-size="10" class="mono green" text-anchor="middle" opacity=".6">Kotlin</text>
+    </g>
+    <g class="float" style="animation-delay:1s">
+      <text x="140" y="-80" font-size="10" class="mono teal" text-anchor="middle" opacity=".6">Compose</text>
+    </g>
+    <g class="float" style="animation-delay:2s">
+      <text x="150" y="100" font-size="10" class="mono blue" text-anchor="middle" opacity=".6">Spring</text>
+    </g>
+    <g class="float" style="animation-delay:3s">
+      <text x="-130" y="80" font-size="10" class="mono green" text-anchor="middle" opacity=".6">MVVM</text>
+    </g>
+  </g>
+
+  <!-- Bottom decorative line -->
+  <line x1="48" y1="580" x2="1152" y2="580" stroke="url(#border-g)" stroke-opacity=".3" stroke-width="1" class="enter d8"/>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="610" font-size="11" class="mono muted enter d8" text-anchor="middle" letter-spacing="1.5">BUILDING RESILIENT SYSTEMS · LEADING WITH CODE · SHIPPING AT SCALE</text>
+</g>
+</svg>

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="about-title about-desc">
+<title id="about-title">About Ravi — 10+ years building fintech, payments, and OTT platforms at scale. Currently at Emirates NBD, Dubai.</title>
+<desc id="about-desc">Animated about section showing career journey and expertise areas</desc>
+<style>
+text{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;font-weight:700;fill:#e8f0fe}
+.mono{font-family:'Courier New','SF Mono',monospace;font-weight:400}
+.green{fill:#3DDC84}.blue{fill:#1a73e8}.teal{fill:#00BCD4}.muted{fill:#7a8ba5}
+.enter{animation:entry 1s cubic-bezier(.16,1,.3,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+.d4{animation-delay:.4s}.d5{animation-delay:.5s}.d6{animation-delay:.6s}
+.pulse{animation:pulse 2.4s ease-in-out infinite both}
+.float{animation:float 6s ease-in-out infinite both}
+.scan{animation:scan 9s ease-in-out infinite both}
+@keyframes entry{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes scan{0%,25%{transform:translateX(-1200px)}75%,100%{transform:translateX(1200px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="ab-border" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#3DDC84" stop-opacity=".6"/>
+    <stop offset=".5" stop-color="#1a73e8" stop-opacity=".25"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity=".5"/>
+  </linearGradient>
+  <linearGradient id="ab-foil">
+    <stop stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".45" stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#afffcc" stop-opacity=".15"/>
+    <stop offset=".55" stop-color="#00BCD4" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="ab-glow">
+    <stop stop-color="#3DDC84" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#3DDC84" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="ab-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r=".6" fill="#3DDC84" opacity=".06"/>
+  </pattern>
+  <clipPath id="ab-clip"><rect x="1" y="1" width="1198" height="518" rx="24"/></clipPath>
+</defs>
+
+<g clip-path="url(#ab-clip)">
+  <rect x="1" y="1" width="1198" height="518" rx="24" fill="#0a1628" stroke="url(#ab-border)" stroke-width="1"/>
+  <rect x="2" y="2" width="1196" height="516" rx="23" fill="url(#ab-dots)"/>
+  <ellipse cx="600" cy="260" rx="400" ry="300" fill="url(#ab-glow)"/>
+  <rect x="0" y="0" width="1200" height="520" fill="url(#ab-foil)" class="scan"/>
+
+  <!-- Section label -->
+  <text x="48" y="48" font-size="11" letter-spacing="2.5" class="mono muted enter d1">// ABOUT</text>
+
+  <!-- Headline -->
+  <text x="48" y="100" font-size="38" class="enter d2" fill="#e8f0fe">Decade of Building</text>
+  <text x="475" y="100" font-size="38" class="enter d2 green"> at Scale</text>
+
+  <!-- Description -->
+  <text x="48" y="140" font-size="14" class="mono muted enter d3">Engineering Lead with deep expertise in Android, backend systems, and cross-functional team leadership.</text>
+  <text x="48" y="162" font-size="14" class="mono muted enter d3">Shipped apps used by millions across fintech, payments, OTT, and digital entertainment.</text>
+
+  <!-- Career timeline cards -->
+  <!-- Emirates NBD -->
+  <g class="enter d3" transform="translate(48,195)">
+    <rect width="345" height="120" rx="14" fill="#0c2040" stroke="#3DDC84" stroke-opacity=".3" stroke-width="1"/>
+    <circle cx="24" cy="24" r="6" fill="#3DDC84" class="pulse"/>
+    <text x="38" y="28" font-size="11" class="mono green">CURRENT</text>
+    <text x="24" y="56" font-size="17" fill="#e8f0fe">Emirates NBD</text>
+    <text x="24" y="76" font-size="12" class="mono muted">Senior Software Engineer</text>
+    <text x="24" y="96" font-size="11" class="mono" fill="#3DDC84">Dubai, UAE · 2026–Present</text>
+    <text x="24" y="110" font-size="10" class="mono muted">ENBD X Mobile Banking · Card Services</text>
+  </g>
+
+  <!-- PayNearby -->
+  <g class="enter d4" transform="translate(417,195)">
+    <rect width="345" height="120" rx="14" fill="#0c2040" stroke="#1a73e8" stroke-opacity=".25" stroke-width="1"/>
+    <text x="24" y="28" font-size="11" class="mono blue">6 YEARS</text>
+    <text x="24" y="56" font-size="17" fill="#e8f0fe">PayNearby</text>
+    <text x="24" y="76" font-size="12" class="mono muted">Sr. Engineering Team Lead</text>
+    <text x="24" y="96" font-size="11" class="mono" fill="#1a73e8">Mumbai · 2020–2026</text>
+    <text x="24" y="110" font-size="10" class="mono muted">Fintech · Led team of 10+ · 4 apps shipped</text>
+  </g>
+
+  <!-- JetSynthesys -->
+  <g class="enter d5" transform="translate(786,195)">
+    <rect width="345" height="120" rx="14" fill="#0c2040" stroke="#00BCD4" stroke-opacity=".25" stroke-width="1"/>
+    <text x="24" y="28" font-size="11" class="mono teal">3 YEARS</text>
+    <text x="24" y="56" font-size="17" fill="#e8f0fe">JetSynthesys</text>
+    <text x="24" y="76" font-size="12" class="mono muted">Senior Software Engineer</text>
+    <text x="24" y="96" font-size="11" class="mono" fill="#00BCD4">Pune · 2016–2019</text>
+    <text x="24" y="110" font-size="10" class="mono muted">OTT · 100MB App · Sony Blue Planet</text>
+  </g>
+
+  <!-- Domain expertise tags -->
+  <g class="enter d5" transform="translate(48,340)">
+    <text x="0" y="14" font-size="11" letter-spacing="1.5" class="mono muted">DOMAINS</text>
+  </g>
+
+  <g class="enter d5 float" transform="translate(48,368)">
+    <rect width="90" height="30" rx="15" fill="#112a1e" stroke="#3DDC84" stroke-opacity=".4"/>
+    <text x="45" y="20" font-size="11" text-anchor="middle" class="mono green">Fintech</text>
+  </g>
+  <g class="enter d5 float" transform="translate(150,368)" style="animation-delay:.8s">
+    <rect width="100" height="30" rx="15" fill="#112a1e" stroke="#3DDC84" stroke-opacity=".4"/>
+    <text x="50" y="20" font-size="11" text-anchor="middle" class="mono green">Payments</text>
+  </g>
+  <g class="enter d5 float" transform="translate(262,368)" style="animation-delay:1.6s">
+    <rect width="130" height="30" rx="15" fill="#0c1e3d" stroke="#1a73e8" stroke-opacity=".4"/>
+    <text x="65" y="20" font-size="11" text-anchor="middle" class="mono blue">OTT/Streaming</text>
+  </g>
+  <g class="enter d5 float" style="animation-delay:2.4s" transform="translate(404,368)">
+    <rect width="95" height="30" rx="15" fill="#0c1e3d" stroke="#1a73e8" stroke-opacity=".4"/>
+    <text x="47" y="20" font-size="11" text-anchor="middle" class="mono blue">B2B SaaS</text>
+  </g>
+  <g class="enter d5 float" style="animation-delay:3.2s" transform="translate(511,368)">
+    <rect width="110" height="30" rx="15" fill="#0c2a2c" stroke="#00BCD4" stroke-opacity=".4"/>
+    <text x="55" y="20" font-size="11" text-anchor="middle" class="mono teal">Rural Tech</text>
+  </g>
+  <g class="enter d5 float" style="animation-delay:4s" transform="translate(633,368)">
+    <rect width="170" height="30" rx="15" fill="#0c2a2c" stroke="#00BCD4" stroke-opacity=".4"/>
+    <text x="85" y="20" font-size="11" text-anchor="middle" class="mono teal">Digital Entertainment</text>
+  </g>
+
+  <!-- Impact metrics -->
+  <g class="enter d6" transform="translate(48,430)">
+    <text x="0" y="14" font-size="11" letter-spacing="1.5" class="mono muted">KEY IMPACT</text>
+  </g>
+
+  <g class="enter d6" transform="translate(48,458)">
+    <text x="0" y="16" font-size="28" class="green">80%</text>
+    <text x="80" y="16" font-size="11" class="mono muted">complaint steps</text>
+    <text x="80" y="30" font-size="11" class="mono muted">reduced</text>
+  </g>
+  <g class="enter d6" transform="translate(230,458)">
+    <text x="0" y="16" font-size="28" class="blue">40%</text>
+    <text x="66" y="16" font-size="11" class="mono muted">fewer open</text>
+    <text x="66" y="30" font-size="11" class="mono muted">support tickets</text>
+  </g>
+  <g class="enter d6" transform="translate(405,458)">
+    <text x="0" y="16" font-size="28" class="teal">10MB</text>
+    <text x="82" y="16" font-size="11" class="mono muted">APK size</text>
+    <text x="82" y="30" font-size="11" class="mono muted">reduction</text>
+  </g>
+  <g class="enter d6" transform="translate(585,458)">
+    <text x="0" y="16" font-size="28" fill="#e8f0fe">400+</text>
+    <text x="74" y="16" font-size="11" class="mono muted">new retailer</text>
+    <text x="74" y="30" font-size="11" class="mono muted">onboardings/mo</text>
+  </g>
+  <g class="enter d6" transform="translate(775,458)">
+    <text x="0" y="16" font-size="28" class="green">90%</text>
+    <text x="70" y="16" font-size="11" class="mono muted">bug-free</text>
+    <text x="70" y="30" font-size="11" class="mono muted">delivery rate</text>
+  </g>
+  <g class="enter d6" transform="translate(960,458)">
+    <text x="0" y="16" font-size="28" class="blue">6L+</text>
+    <text x="55" y="16" font-size="11" class="mono muted">app installs</text>
+    <text x="55" y="30" font-size="11" class="mono muted">100MB app</text>
+  </g>
+</g>
+</svg>

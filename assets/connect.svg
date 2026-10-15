@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="connect-title connect-desc">
+<title id="connect-title">Let's connect. Find Ravi on LinkedIn, GitHub, or reach out via email.</title>
+<desc id="connect-desc">Animated connect section with social links and call to action</desc>
+<style>
+text{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;font-weight:700;fill:#e8f0fe}
+.mono{font-family:'Courier New','SF Mono',monospace;font-weight:400}
+.green{fill:#3DDC84}.blue{fill:#1a73e8}.teal{fill:#00BCD4}.muted{fill:#7a8ba5}
+.enter{animation:entry 1s cubic-bezier(.16,1,.3,1) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}
+.d4{animation-delay:.4s}.d5{animation-delay:.5s}
+.pulse{animation:pulse 3s ease-in-out infinite both}
+.float{animation:float 6s ease-in-out infinite both}
+.scan{animation:scan 9s ease-in-out infinite both}
+.nudge{animation:nudge 3s ease-in-out infinite both}
+@keyframes entry{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes scan{0%,25%{transform:translateX(-1200px)}75%,100%{transform:translateX(1200px)}}
+@keyframes nudge{0%,70%,100%{transform:translateX(0)}85%{transform:translateX(6px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="cn-border" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#3DDC84" stop-opacity=".6"/>
+    <stop offset=".5" stop-color="#1a73e8" stop-opacity=".25"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity=".5"/>
+  </linearGradient>
+  <linearGradient id="cn-foil">
+    <stop stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".45" stop-color="#3DDC84" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#afffcc" stop-opacity=".18"/>
+    <stop offset=".55" stop-color="#00BCD4" stop-opacity=".06"/>
+    <stop offset="1" stop-color="#00BCD4" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="cn-glow">
+    <stop stop-color="#3DDC84" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#3DDC84" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="cn-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r=".6" fill="#3DDC84" opacity=".06"/>
+  </pattern>
+  <clipPath id="cn-clip"><rect x="1" y="1" width="1198" height="338" rx="24"/></clipPath>
+</defs>
+
+<g clip-path="url(#cn-clip)">
+  <rect x="1" y="1" width="1198" height="338" rx="24" fill="#0a1628" stroke="url(#cn-border)" stroke-width="1"/>
+  <rect x="2" y="2" width="1196" height="336" rx="23" fill="url(#cn-dots)"/>
+  <ellipse cx="600" cy="170" rx="500" ry="250" fill="url(#cn-glow)"/>
+  <rect x="0" y="0" width="1200" height="340" fill="url(#cn-foil)" class="scan"/>
+
+  <!-- Section label -->
+  <text x="48" y="48" font-size="11" letter-spacing="2.5" class="mono muted enter d1">// CONNECT</text>
+
+  <!-- Headline -->
+  <text x="48" y="105" font-size="40" class="enter d2">Let's Build</text>
+  <text x="295" y="105" font-size="40" class="enter d2 green"> What's Next</text>
+
+  <text x="48" y="140" font-size="14" class="mono muted enter d3">Open to collaborations, consulting, and interesting conversations about Android, fintech, and scalable systems.</text>
+
+  <!-- Connect cards -->
+  <!-- LinkedIn -->
+  <g class="enter d3 float" transform="translate(48,170)">
+    <rect width="180" height="70" rx="14" fill="#0c2040" stroke="#1a73e8" stroke-opacity=".4" stroke-width="1"/>
+    <text x="24" y="30" font-size="14" class="blue">LinkedIn</text>
+    <text x="24" y="50" font-size="10" class="mono muted">Ravi Rajak</text>
+    <text x="156" y="30" font-size="16" class="nudge blue">→</text>
+  </g>
+
+  <!-- GitHub -->
+  <g class="enter d4 float" style="animation-delay:1s" transform="translate(248,170)">
+    <rect width="180" height="70" rx="14" fill="#0c2040" stroke="#e8f0fe" stroke-opacity=".2" stroke-width="1"/>
+    <text x="24" y="30" font-size="14" fill="#e8f0fe">GitHub</text>
+    <text x="24" y="50" font-size="10" class="mono muted">ravirajjak</text>
+    <text x="156" y="30" font-size="16" class="nudge" fill="#e8f0fe">→</text>
+  </g>
+
+  <!-- Email -->
+  <g class="enter d4 float" style="animation-delay:2s" transform="translate(448,170)">
+    <rect width="240" height="70" rx="14" fill="#0c2040" stroke="#3DDC84" stroke-opacity=".3" stroke-width="1"/>
+    <text x="24" y="30" font-size="14" class="green">Email</text>
+    <text x="24" y="50" font-size="10" class="mono muted">ravirajjak@gmail.com</text>
+    <text x="216" y="30" font-size="16" class="nudge green">→</text>
+  </g>
+
+  <!-- Phone -->
+  <g class="enter d5 float" style="animation-delay:3s" transform="translate(708,170)">
+    <rect width="200" height="70" rx="14" fill="#0c2040" stroke="#00BCD4" stroke-opacity=".3" stroke-width="1"/>
+    <text x="24" y="30" font-size="14" class="teal">Location</text>
+    <text x="24" y="50" font-size="10" class="mono muted">Dubai, UAE</text>
+    <circle cx="176" cy="26" r="5" fill="#3DDC84" class="pulse"/>
+  </g>
+
+  <!-- Status -->
+  <g class="enter d5" transform="translate(928,170)">
+    <rect width="210" height="70" rx="14" fill="#112a1e" stroke="#3DDC84" stroke-opacity=".5" stroke-width="1"/>
+    <circle cx="24" cy="26" r="5" fill="#3DDC84" class="pulse"/>
+    <text x="38" y="30" font-size="13" class="green">Open to Work</text>
+    <text x="24" y="50" font-size="10" class="mono muted">Consulting &amp; Collab</text>
+  </g>
+
+  <!-- Apps shipped ribbon -->
+  <g class="enter d5" transform="translate(48,260)">
+    <text x="0" y="14" font-size="11" letter-spacing="1.5" class="mono muted">APPS SHIPPED</text>
+  </g>
+  <g class="enter d5" transform="translate(48,285)">
+    <text font-size="11" class="mono" fill="#7a8ba5">
+      ENBD X · PayNearby · Neo Dukaan · Saathi · 100MB · Blue Planet (Sony) · Channel Fight · Sugarbox · Netcore SDK · Feast Plus
+    </text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="600" y="320" font-size="11" class="mono muted enter d5" text-anchor="middle" letter-spacing="1.5">CURIOUS BY DEFAULT · BUILDING WITH INTENT · SHIPPING WITH CRAFT</text>
+</g>
+</svg>
